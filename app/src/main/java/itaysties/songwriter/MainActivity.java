@@ -14,27 +14,6 @@ import android.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button button3;
-    Toolbar toolbar2;
-
-    public void main(String[] args){
-
-        //Connect toolbar2 to toolBar2 in activity main
-        toolbar2 = (Toolbar) findViewById(R.id.toolbar2);
-
-        //Connect button3 to button3 inactivity main
-        button3 = (Button) findViewById(R.id.button3);
-
-        button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //click button code goes here
-                toolbar2.setVisibility(View.INVISIBLE);
-            }
-        });
-
-    }
-
     // Remove the below line after defining your own ad unit ID.
     private static final String TOAST_TEXT = "Test ads are being shown. "
             + "To show live ads, replace the ad unit ID in res/values/strings.xml with your own ad unit ID.";
@@ -78,5 +57,14 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    /************************************END-OF-ADDS***********************************************/
+
+    public static Main mn = new Main();
+
+    public static void main(String[] args){
+
+        mn.onClick();
+
+    }
 
 }
