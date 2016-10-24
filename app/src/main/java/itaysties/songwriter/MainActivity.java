@@ -57,13 +57,13 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    /************************************END-OF-ADDS***********************************************/
+    /************************************
+     * END-OF-ADDS
+     ***********************************************/
 
     public static Main mn = new Main();
 
-    public static void main(String[] args){
-
-        mn.onClick();
+    public static void main(String[] args) {
 
     }
 

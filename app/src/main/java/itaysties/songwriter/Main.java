@@ -9,7 +9,7 @@ import android.widget.Toolbar;
  * Created by USer on 2016-10-20.
  */
 
-public class Main extends ActionBarActivity implements View.OnClickListener{
+public class Main extends ActionBarActivity implements View.OnClickListener {
 
     Button button3;
     Toolbar toolbar2;
