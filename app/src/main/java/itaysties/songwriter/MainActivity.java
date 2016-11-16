@@ -6,7 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
@@ -30,16 +32,39 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /**
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar2);
+        setSupportActionBar(toolbar);
+
+        */
+
+        LinearLayout layout = (LinearLayout) findViewById(R.id.ProjectsLayout);
+
         Button apb = (Button) findViewById(R.id.apb);
+        Button sb = (Button) findViewById(R.id.sb);
         apb.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Snackbar.make(view, "You pressed a button", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onClick(View view) {
+                //Snackbar.make(view, "You pressed a button", Snackbar.LENGTH_LONG)
+                  //      .setAction("Action", null).show();
             }
         });
+
+        ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(
+                ViewGroup.LayoutParams.WRAP_CONTENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT
+        );
+
+        for(int i=0; i<30; i++){
+            Button b = new Button(this);
+            b.setText("Project");
+            b.setLayoutParams(params);
+            layout.addView(b);
+        }
+
 
         // Load an ad into the AdMob banner view.
         AdView adView = (AdView) findViewById(R.id.adView);
