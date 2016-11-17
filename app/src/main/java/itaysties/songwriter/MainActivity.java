@@ -53,13 +53,14 @@ public class MainActivity extends AppCompatActivity {
         Button sb = (Button) findViewById(R.id.sb);
         apb.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                //Snackbar.make(view, "You pressed a button", Snackbar.LENGTH_LONG)
-                  //      .setAction("Action", null).show();
-                //Button b = new Button(this);
-                //b.setText("Project");
-                //b.setLayoutParams(params);
-                //layout.addView(b);
-
+                /*
+                Snackbar.make(view, "You pressed a button", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+                Button b = new Button(this);
+                b.setText("Project");
+                b.setLayoutParams(params);
+                layout.addView(b);
+                */
             }
         });
 
