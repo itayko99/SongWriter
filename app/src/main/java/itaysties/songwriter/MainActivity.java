@@ -42,7 +42,12 @@ public class MainActivity extends AppCompatActivity {
 
         */
 
-        LinearLayout layout = (LinearLayout) findViewById(R.id.ProjectsLayout);
+        final LinearLayout layout = (LinearLayout) findViewById(R.id.ProjectsLayout);
+
+        final ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(
+                ViewGroup.LayoutParams.WRAP_CONTENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT
+        );
 
         Button apb = (Button) findViewById(R.id.apb);
         Button sb = (Button) findViewById(R.id.sb);
@@ -50,13 +55,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //Snackbar.make(view, "You pressed a button", Snackbar.LENGTH_LONG)
                   //      .setAction("Action", null).show();
+                //Button b = new Button(this);
+                //b.setText("Project");
+                //b.setLayoutParams(params);
+                //layout.addView(b);
+
             }
         });
 
-        ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(
-                ViewGroup.LayoutParams.WRAP_CONTENT,
-                ViewGroup.LayoutParams.WRAP_CONTENT
-        );
 
         for(int i=0; i<30; i++){
             Button b = new Button(this);
