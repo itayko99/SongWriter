@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
      */
     private GoogleApiClient client;
 
-
-    int i = 0;
+    private Button[] b;
+    private int i = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,22 +69,17 @@ public class MainActivity extends AppCompatActivity {
 
                 i++;
 
-                for(int j = 0; j <= i; j++){
-                   Button[] b = new Button[j];
+               /* for(int j = 0; j < (i+1); j++){
+                    b = new Button[j];
                     b[j].setText("Project");
                     b[j].setLayoutParams(params);
                     layout.addView(b[j]);
-                }
+                }*/
             }
         });
 
 
-       // for(int i=0; i<30; i++){
-         //   Button b = new Button(this);
-           // b.setText("Project");
-            //b.setLayoutParams(params);
-            //layout.addView(b);
-        //}
+
 
 
         // Load an ad into the AdMob banner view.
