@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 layout.addView(b);
                 */
 
-                i++;
+                //i++;
 
                /* for(int j = 0; j < (i+1); j++){
                     b = new Button[j];
@@ -75,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
                     b[j].setLayoutParams(params);
                     layout.addView(b[j]);
                 }*/
+
+                setContentView(R.layout.activity_project);
+
             }
         });
 
