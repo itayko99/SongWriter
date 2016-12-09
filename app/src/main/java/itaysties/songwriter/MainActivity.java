@@ -54,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
         Button apb = (Button) findViewById(R.id.apb);
         Button sb = (Button) findViewById(R.id.sb);
 
+        //item Home = (item) findViewById(R.id.Home);
+
         //Button[] b;
 
         apb.setOnClickListener(new View.OnClickListener() {
@@ -77,6 +79,8 @@ public class MainActivity extends AppCompatActivity {
                 }*/
 
                 setContentView(R.layout.activity_project);
+
+
 
             }
         });
