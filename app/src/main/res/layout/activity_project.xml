@@ -11,10 +11,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/button2"
         android:layout_alignBottom="@+id/toolbar3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_alignTop="@+id/toolbar3"
-        android:elevation="0dp" />
+        android:elevation="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:text="pause"
@@ -105,6 +105,23 @@
             android:layout_marginRight="12dp"
             android:layout_marginEnd="12dp"
             android:layout_alignBottom="@+id/button8" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/button2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="58dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:ems="10"
+                android:id="@+id/editText" />
+        </ScrollView>
 
     </RelativeLayout>
 
