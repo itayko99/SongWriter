@@ -106,21 +106,76 @@
             android:layout_marginEnd="12dp"
             android:layout_alignBottom="@+id/button8" />
 
-        <ScrollView
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_below="@+id/toolbar7"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <GridLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="58dp">
+            android:layout_below="@+id/editText">
+            android:layout_below="@+id/editText"
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
                 android:inputType="textPersonName"
-                android:text="Name"
                 android:ems="10"
-                android:id="@+id/editText" />
-        </ScrollView>
+                android:id="@+id/editText44"
+                android:layout_below="@+id/editText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:layout_row="0"
+                android:layout_column="0" />
+
+            <EditText
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText42"
+                android:layout_below="@+id/editText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:layout_row="0"
+                android:layout_column="1" />
+
+            <EditText
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText45"
+                android:layout_below="@+id/editText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:layout_row="0"
+                android:layout_column="3" />
+
+            <EditText
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText43"
+                android:layout_below="@+id/editText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:layout_row="0"
+                android:layout_column="2" />
+        </GridLayout>
+
 
     </RelativeLayout>
 
