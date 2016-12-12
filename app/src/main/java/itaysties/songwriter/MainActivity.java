@@ -8,7 +8,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.GridLayout;
 import android.widget.LinearLayout;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
@@ -18,7 +20,8 @@ import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity
+{
 
     // Remove the below line after defining your own ad unit ID.
     private static final String TOAST_TEXT = "Test ads are being shown. "
@@ -39,10 +42,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         /**
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar2);
-        setSupportActionBar(toolbar);
+         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar2);
+         setSupportActionBar(toolbar);
 
-        */
+         */
 
         final LinearLayout layout = (LinearLayout) findViewById(R.id.ProjectsLayout);
 
@@ -81,13 +84,8 @@ public class MainActivity extends AppCompatActivity {
                 setContentView(R.layout.activity_project);
 
 
-
             }
         });
-
-
-
-
 
         // Load an ad into the AdMob banner view.
         AdView adView = (AdView) findViewById(R.id.adView);
@@ -101,6 +99,21 @@ public class MainActivity extends AppCompatActivity {
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+
+    }
+
+    Switch switch2 = (Switch) findViewById(R.id.switch2);
+    GridLayout grid = (GridLayout) findViewById(R.id.grid);
+
+    public void onClick(View v) {
+
+        if (grid.getVisibility() == View.VISIBLE) {
+            grid.setVisibility(View.GONE);
+        }
+
+        if (grid.getVisibility() == View.GONE) {
+            grid.setVisibility(View.VISIBLE);
+        }
     }
 
 
@@ -111,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    @Override
+   @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
