@@ -8,9 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.GridLayout;
 import android.widget.LinearLayout;
-import android.widget.Switch;
 import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
@@ -87,6 +85,15 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
+        //Button home = (Button) findViewById(R.id.Home);
+/*
+        home.setOnClickListener(new View.OnClickListener() {
+                                    public void onClick(View view) {
+
+                            setContentView (R.layout.activity_main);
+
+                                    }});
+*/
         // Load an ad into the AdMob banner view.
         AdView adView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder()
@@ -101,7 +108,7 @@ public class MainActivity extends AppCompatActivity
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
 
     }
-
+/*
     Switch switch2 = (Switch) findViewById(R.id.switch2);
     GridLayout grid = (GridLayout) findViewById(R.id.grid);
 
@@ -115,7 +122,7 @@ public class MainActivity extends AppCompatActivity
             grid.setVisibility(View.VISIBLE);
         }
     }
-
+*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
