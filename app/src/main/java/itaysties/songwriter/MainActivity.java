@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity
         //Button[] b;
 
         apb.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
+                public void onClick(View veiw) {
                 /*
                 Snackbar.make(view, "You pressed a button", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();

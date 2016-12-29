@@ -32,6 +32,9 @@
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@android:style/Theme.Translucent" />
         <activity android:name=".Project"></activity>
+
+        <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="15"/>
+
     </application>
 
 </manifest>
