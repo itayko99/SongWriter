@@ -12,6 +12,7 @@ public class Project extends AppCompatActivity {
 
     Switch switch2 = (Switch) findViewById(R.id.switch2);
     GridLayout grid = (GridLayout) findViewById(R.id.grid);
+    //grid.setVisibility(0);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
