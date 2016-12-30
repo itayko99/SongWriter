@@ -85,8 +85,8 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        //Button home = (Button) findViewById(R.id.Home);
-/*
+/*        Button home = (Button) findViewById(R.id.Home);
+
         home.setOnClickListener(new View.OnClickListener() {
                                     public void onClick(View view) {
 
